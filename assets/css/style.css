@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:wght@300;400;600;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -13,3 +15,19 @@
 /************************/
 /* 0 - Variáveis
 /************************/
+
+:root {
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Hubballi', cursive;
+
+    --clr-dark-green: #049A40;
+    --clr-light-green: #0CF96A;
+    --clr-dark-pink: #E10BF9;
+    --clr-light-pink: #F3A0FD;
+    --clr-light-gray: #F5F5F5;
+    --clr-dark-gray: #E4E4E4;
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-red: #EB3534;
+
+}
