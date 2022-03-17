@@ -171,4 +171,5 @@ h2 {
 
 .our-plans {
     background-color: var(--clr-light-pink);
+    display: flex;
 }
