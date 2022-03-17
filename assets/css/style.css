@@ -29,8 +29,6 @@
     --clr-light-pink: #F3A0FD;
     --clr-light-gray: #F5F5F5;
     --clr-dark-gray: #E4E4E4;
-    --clr-black: #000000;
-    --clr-red: #EB3534;
 
 }
 
@@ -165,4 +163,12 @@ h2 {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+/************************/
+/* 7 - Plans
+/************************/
+
+.our-plans {
+    background-color: var(--clr-light-pink);
 }
