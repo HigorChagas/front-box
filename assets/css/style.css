@@ -171,5 +171,52 @@ h2 {
 
 .our-plans {
     background-color: var(--clr-light-pink);
+}
+
+.our-plans__container {
     display: flex;
+    justify-content: center;
+}
+
+.our-plans__card {
+    margin: 0 25px;
+}
+
+.our-plans__card h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.our-plans__card p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.our-plans__card span{
+    position: relative;
+    top: 20px;
+    font-size: 2rem;
+}
+
+.our-plans__card ul li::before {
+    content: "\2022";
+    color: var(--clr-light-green);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1rem;
+}
+
+
+
+.our-plans__card:nth-child(1) {
+    border: 1px solid var(--clr-light-green);
+}
+
+.our-plans__card:nth-child(1) h3{
+    text-align: center;
+}
+
+.our-plans__card:nth-child(1) p{
+    text-align: center;
 }
