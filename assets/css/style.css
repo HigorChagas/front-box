@@ -180,22 +180,57 @@ h2 {
 
 .our-plans__card {
     margin: 0 25px;
+    padding: 0 70px;
 }
 
 .our-plans__card h3{
+    margin: 10px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
 }
 
 .our-plans__card p{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: 600;
 }
 
 .our-plans__card span{
     position: relative;
-    top: 20px;
-    font-size: 2rem;
+    top: 13px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.our-plans__card hr {
+    color: var(--clr-light-green);
+    width: 40px;
+}
+
+.our-plans__card button {
+    display: block;
+    border: none;
+    background: none;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border: 3px solid var(--clr-light-green);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.our-plans__card ul {
+    padding: 0;
+}
+
+.our-plans__card ul li {
+    font-size: 1.1;
+    letter-spacing: 1px;
+    padding: 2px;
 }
 
 .our-plans__card ul li::before {
@@ -207,10 +242,10 @@ h2 {
     margin-left: -1rem;
 }
 
-
+/* 7 - Plans / First Card */
 
 .our-plans__card:nth-child(1) {
-    border: 1px solid var(--clr-light-green);
+    border: 3px solid var(--clr-light-green);
 }
 
 .our-plans__card:nth-child(1) h3{
@@ -219,4 +254,11 @@ h2 {
 
 .our-plans__card:nth-child(1) p{
     text-align: center;
+}
+
+/* 7 - Plans / Second Card */
+
+.our-plans__card:nth-child(2) {
+    border: 3px solid var(--clr-light-green);
+    border-width: -5px;
 }
