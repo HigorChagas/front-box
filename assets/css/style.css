@@ -209,7 +209,7 @@ h2 {
     width: 40px;
 }
 
-.our-plans__card button {
+.our-plans__card .our-plans__btn-buy {
     display: block;
     border: none;
     background: none;
@@ -260,5 +260,33 @@ h2 {
 
 .our-plans__card:nth-child(2) {
     border: 3px solid var(--clr-light-green);
-    border-width: -5px;
+}
+
+.our-plans__card:nth-child(2)::before {
+    content: '';
+    height: 1000%;
+}
+
+/* 7 - Plans / Third Card */
+.our-plans__card:last-child {
+    background-color: var(--clr-light-green);
+    border: 3px solid var(--clr-dark-pink);
+}
+
+.our-plans__card:last-child, .our-plans__card:last-child .our-plans__btn-buy:last-child {
+    border: 3px solid var(--clr-dark-pink);
+}
+
+.our-plans__card:last-child ul li::before {
+    content: "\2022";
+    color: var(--clr-dark-pink);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1rem;
+}
+
+.our-plans__card:last-child hr {
+    color: var(--clr-dark-pink);
+    width: 40px;
 }
