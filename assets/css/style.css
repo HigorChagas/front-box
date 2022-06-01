@@ -15,7 +15,7 @@
 /* 5 - About us 
 /* 6 - Courses
 /* 7 - Plans
-/* 8 - Description
+/* 8 - benefits
 /**************************************/
 
 /************************/
@@ -174,7 +174,6 @@ h2 {
 
 .our-plans {
     background-color: var(--clr-light-pink);
-    height: 568px;
 }
 
 .our-plans__container {
@@ -184,7 +183,7 @@ h2 {
 }
 
 .our-plans__card {
-    margin: 0 25px;
+    margin: 10px 25px;
     padding: 0 70px;
 }
 
@@ -300,27 +299,50 @@ h2 {
 }
 
 /************************/
-/* 8 - Description
+/* 8 - Benefits
 /************************/
 
-.our-description {
+.our-benefits {
+    max-width: 960px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 20%;
-    margin: 0 auto;
+    justify-content: space-between;
 }
 
-.our-description__section {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-right: 30px;
+.our-benefits__section {
+    max-width: 240px;
+    margin: 10px;
 }
 
-.our-description__title {
-    margin: 0;
-    margin-top: 5px;
-    font-size: 1.6rem;
-    font-weight: 500;
+.our-benefits__title {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.our-benefits__title::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.our-benefits__section:nth-of-type(3n+1) .our-benefits__title::before {
+    background: var(--clr-light-green);
+}
+
+.our-benefits__section:nth-of-type(3n+2) .our-benefits__title::before {
+    background: var(--clr-dark-pink);
+}
+
+.our-benefits__section:nth-of-type(3n+3) .our-benefits__title::before {
+    background: var(--clr-dark-green);
+}
+
+@media (max-width: 800px) {
+    .our-benefits__section {
+        max-width: 220px;
+    }
 }
